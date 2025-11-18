@@ -70,6 +70,3 @@ fi
 if [ -n "$NEW_RIGHT" ] && [ "$NEW_RIGHT" != "$RIGHT_STATUS" ]; then
     tmux set-option -g status-right "$NEW_RIGHT"
 fi
-
-# Display success message
-tmux display-message "tmux-sysmon (Rust): Integrated successfully with $TMUX_SYSMON_BIN"
